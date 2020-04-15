@@ -1,0 +1,98 @@
+.input {
+  display: flex;
+  justify-content: space-around;
+}
+
+.submitButton {
+  border: 2px solid #777070;
+  border-radius: 10px;
+  width: 100px;
+  height: 35px;
+  background-color: grey;
+  color: lightgray;
+  padding: 9px 15px;
+}
+.searchButton {
+  width: 300px;
+  height: 25px;
+  border-radius: 10px;
+  border: 2px solid gray;
+  margin: 20px 10px;
+  padding: 5px;
+}
+
+.searchButton:active,
+.searchButton:hover,
+.searchButton:focus {
+  border: 2px solid lightsalmon;
+}
+
+.submitButton:hover {
+  background-color: rgb(202, 67, 52);
+  color: antiquewhite;
+  border: 1px solid #775454;
+}
+input:focus {
+  outline: none;
+}
+
+.Recipes {
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+
+  padding: 30px 10px;
+  width: 95%;
+  justify-content: space-around;
+  margin: auto;
+
+  background: linear-gradient(to right, #ee9ca7, #ffdde1);
+}
+
+.ingredients img {
+  padding-bottom: 20px;
+  border-radius: 15px;
+  margin: auto;
+}
+
+.ingredients {
+  margin-bottom: 20px;
+}
+
+.ingredients p {
+  text-align: center;
+  font-weight: 700;
+}
+.ingredients p:first-child {
+  font-size: large;
+}
+
+.App {
+  background: linear-gradient(
+    to right,
+    #ada996,
+    #f2f2f2,
+    #dbdbdb,
+    #eaeaea
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
+}
+
+.Navigation h2 {
+  display: block;
+}
+
+.ingredients {
+  padding: 10px;
+  border: 2px solid rgb(177, 117, 117);
+  border-radius: 10px;
+  background-color: #ee9ca7;
+}
+
+@media screen and (max-width: 600px) {
+  .Logo {
+    width: 100%;
+    text-align: center;
+  }
+}
