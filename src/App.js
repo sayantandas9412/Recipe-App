@@ -8,7 +8,7 @@ const MY_APP_KEY = "b16d4317ba7fb57761e95f87d5cc84c0";
 
 const App = () => {
   const [recipes, setRecipes] = useState([]);
-  const [query, setQuery] = useState("apple");
+  const [query, setQuery] = useState("paneer");
   const [error, setError] = useState("");
   let [inputQuery, setInputQuery] = useState("");
   let errorMsg = "This is not available";
