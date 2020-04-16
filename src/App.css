@@ -46,7 +46,7 @@ input:focus {
   justify-content: space-around;
   margin: auto;
 
-  background: linear-gradient(to right, #ee9ca7, #ffdde1);
+  /* background: linear-gradient(to right, #ee9ca7, #ffdde1); */
 }
 
 .ingredients img {
@@ -85,9 +85,9 @@ input:focus {
 
 .ingredients {
   padding: 10px;
-  border: 2px solid rgb(177, 117, 117);
+  border: 2px solid rgb(168, 161, 161);
   border-radius: 10px;
-  background-color: #ee9ca7;
+  /* background-color: #ee9ca7; */
 }
 
 @media screen and (max-width: 600px) {
