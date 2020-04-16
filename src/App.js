@@ -17,8 +17,8 @@ const App = () => {
     fetch(
       `https://api.edamam.com/search?q=${query}&app_id=${MY_APP_ID}&app_key=${MY_APP_KEY}&from=0&to=3&calories=591-722&health=alcohol-free`
     )
-      .then(res => res.json())
-      .then(data => {
+      .then((res) => res.json())
+      .then((data) => {
         if (data.hits.length == 0) {
           setError(errorMsg);
         } else setRecipes(data.hits);
@@ -26,16 +26,16 @@ const App = () => {
       });
   }, [query]);
 
-  const inputChangeHandler = e => {
+  const inputChangeHandler = (e) => {
     inputQuery = e.target.value;
   };
 
-  const formSubmitHandler = e => {
+  const formSubmitHandler = (e) => {
     e.preventDefault();
     setQuery(inputQuery);
   };
 
-  let Recipes = recipes.map(recipe => (
+  let Recipes = recipes.map((recipe) => (
     <Recipe
       label={recipe.recipe.label}
       calorie={recipe.recipe.calories}
@@ -52,7 +52,7 @@ const App = () => {
           <h1>EasyRecipe</h1>
         </div>
 
-        <form onSubmit={formSubmitHandler} className="form">
+        <form onSubmit={formSubmitHandler} className="form" netlify>
           <input
             name="input"
             type="text"
